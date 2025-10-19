@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #ffffff;
+        color: #1f2937;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+      }
+      h2 {
+        color: #f97316;
+      }
+      form {
+        margin-top: 2rem;
+        background: #fff;
+        padding: 2rem;
+        border: 1px solid #f3f4f6;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      }
+      input {
+        padding: 12px;
+        margin: 10px 0;
+        width: 280px;
+        border-radius: 6px;
+        border: 1px solid #d1d5db;
+      }
+      button {
+        padding: 10px 20px;
+        background: #f97316;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Login to Your Account</h2>
+    <form action="login.php" method="POST">
+      <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required
+      /><br />
+      <input
+        type="password"
+        name="password"
+        placeholder="Password"
+        required
+      /><br />
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>
